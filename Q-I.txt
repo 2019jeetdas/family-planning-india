@@ -1,0 +1,32 @@
+# Question - I : IUD/PPIUD
+
+plt.title('Question - I : IUD/PPIUD')
+plt.xlabel("State/UT sl no. --- >")
+plt.ylabel("Number of uses --- >")
+    
+df_iud_total = df['IUD/PPIUD - Total']
+
+plt.plot(df_iud_total,
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="[1] IUD/PPIUD - Total")
+
+df_iud_rural = df['IUD/PPIUD - Rural']
+                     
+plt.plot(df_ste_male_rural,
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] IUD/PPIUD - Rural")
+            
+df_iud_urban = df['IUD/PPIUD - Urban']
+
+plt.plot(df_iud_urban,
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3] IUD/PPIUD - Urban")
+
+plt.legend()
+plt.show()
