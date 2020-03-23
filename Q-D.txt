@@ -1,0 +1,33 @@
+# Question - D : Using any method
+
+plt.title('Question - D : Using any method ')
+plt.xlabel("State/UT sl no. --- >")
+plt.ylabel("Number of uses --- >")
+
+df_any_total = df['Any method - Total']
+
+plt.plot(df_any_total,
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="[1] Any method - Total ")
+
+df_any_rural = df['Any method - Rural']
+
+plt.plot(df_any_rural,
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] Any method - Rural")
+
+df_any_urban = df['Any method - Urban']
+
+plt.plot(df_any_urban,
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3] Any method - Urban")
+
+plt.legend()
+plt.show()
+
