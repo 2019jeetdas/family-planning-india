@@ -1,0 +1,52 @@
+# Question - C : print available states/UT
+
+df1 = df['India-States-Union Territories']
+
+print('---------------------------------------------')
+print('Available data for following State and UT  : ')
+print('---------------------------------------------')
+print(df1)
+print('---------------------------------------------')
+
+---------------------------------------------
+Available data for following State and UT  : 
+---------------------------------------------
+0                         India
+1                Andhra Pradesh
+2                         Assam
+3                         Bihar
+4                   Chattisgarh
+5                       Gujarat
+6                       Haryana
+7                     Jharkhand
+8                     Karnataka
+9                        Kerala
+10               Madhya Pradesh
+11                  Maharashtra
+12                       Odisha
+13                       Punjab
+14                    Rajasthan
+15                   Tamil Nadu
+16                    Telangana
+17                Uttar Pradesh
+18                  West Bengal
+19            Arunachal Pradesh
+20                        Delhi
+21                          Goa
+22             Himachal Pradesh
+23              Jammu & Kashmir
+24                      Manipur
+25                    Meghalaya
+26                      Mizoram
+27                     Nagaland
+28                       Sikkim
+29                      Tripura
+30                  Uttarakhand
+31    Andaman & Nicobar Islands
+32                   Chandigarh
+33         Dadra & Nagar Haveli
+34                  Daman & Diu
+35                  Lakshadweep
+36                   Puducherry
+Name: India-States-Union Territories, dtype: object
+---------------------------------------------
