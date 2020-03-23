@@ -1,0 +1,42 @@
+# Question – B : print column names :
+
+print('------------------------\n Column names as follows :')
+print('------------------------\n')
+count = 0
+for col in df.columns: 
+        print(count,"-->",col)
+        count = count+1
+print("\n-----------------------------\n")
+------------------------
+ Column names as follows :
+------------------------
+
+0 --> S.No.
+1 --> India-States-Union Territories
+2 --> Any method - Total
+3 --> Any method - Rural
+4 --> Any method - Urban
+5 --> Any modern method - Total
+6 --> Any modern method - Rural
+7 --> Any modern method - Urban
+8 --> Sterilisation - Total
+9 --> Sterilisation - Rural
+10 --> Sterilisation - Urban
+11 --> Female sterilization - Total
+12 --> Female sterilization - Rural
+13 --> Female sterilization - Urban
+14 --> Male sterilisation - Total
+15 --> Male sterilisation - Rural
+16 --> Male sterilisation - Urban
+17 --> IUD/PPIUD - Total
+18 --> IUD/PPIUD - Rural
+19 --> IUD/PPIUD - Urban
+20 --> Pill - Total
+21 --> Pill - Rural
+22 --> Pill - Urban
+23 --> Condom - Total
+24 --> Condom - Rural
+25 --> Condom - Urban
+
+-----------------------------
+
