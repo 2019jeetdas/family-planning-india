@@ -1,0 +1,32 @@
+# Question - J : Pill using
+
+plt.title('Question - J : Pill using')
+plt.xlabel("State/UT sl no. --- >")
+plt.ylabel("Number of uses --- >")
+    
+df_pill_total = df['Pill - Total']
+
+plt.plot(df_pill_total,
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="[1] Pill - Total")
+
+df_pill_rural = df['Pill - Rural']
+                     
+plt.plot(df_pill_rural,
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] Pill - Rural")
+            
+df_pill_urban = df['Pill - Urban']
+
+plt.plot(df_pill_urban,
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3] Pill - Urban")
+
+plt.legend()
+plt.show()
