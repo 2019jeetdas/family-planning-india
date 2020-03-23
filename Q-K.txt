@@ -1,0 +1,34 @@
+# Question - K : Condom use
+
+plt.title('Question - K : Condom use')
+plt.xlabel("State/UT sl no. --- >")
+plt.ylabel("Number of uses --- >")
+    
+df_condom_total = df['Condom - Total']
+
+plt.plot(df_condom_total,
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="[1] Condom - Total")
+
+df_condom_rural = df['Condom - Rural']
+                     
+plt.plot(df_condom_rural,
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] Condom - Rural")
+            
+df_condom_urban = df['Condom - Urban']
+
+plt.plot(df_condom_urban,
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3] Condom - Urban")
+
+plt.legend()
+plt.show()
+
+
