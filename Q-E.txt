@@ -1,0 +1,32 @@
+# Question - E : Using any " MODERN " method
+
+plt.title('Question - E : Using any " MODERN " method')
+plt.xlabel("State/UT sl no. --- >")
+plt.ylabel("Number of uses --- >")
+    
+df_any_mod_total = df['Any modern method - Total']
+
+plt.plot(df_any_mod_total,
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="[1] Any modern method - Total")
+
+df_any_mod_rural = df['Any modern method - Rural']
+                     
+plt.plot(df_any_mod_rural,
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] Any modern method - Rural")
+            
+df_any_mod_urban = df[' Any modern method - Urban']
+
+plt.plot(df_any_mod_urban,
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3]  Any modern method - Urban")
+
+plt.legend()
+plt.show()
