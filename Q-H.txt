@@ -1,0 +1,32 @@
+# Question - H : Male Sterilisation
+
+plt.title('Question - H : Male Sterilisation')
+plt.xlabel("State/UT sl no. --- >")
+plt.ylabel("Number of uses --- >")
+    
+df_ste_male_total = df['Male sterilisation - Total']
+
+plt.plot(df_ste_male_total,
+            marker=7,
+            markersize=10,
+            linestyle='dashed',
+            label="[1] Male sterilisation - Total")
+
+df_ste_male_rural = df['Male sterilisation - Rural']
+                     
+plt.plot(df_ste_male_rural,
+            marker='*',
+            markersize=10,
+            linestyle='dashed',
+            label="[2] Male sterilisation - Rural")
+            
+df_ste_male_urban = df['Male sterilisation - Urban']
+
+plt.plot(df_ste_male_urban,
+            marker='+',
+            markersize=10,
+            linestyle='dashed',
+            label="[3] Male sterilisation - Urban")
+
+plt.legend()
+plt.show()
